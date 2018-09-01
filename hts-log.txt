@@ -1,0 +1,28 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 02 Sep 2018 01:14:46 at http://matthew.wagerfield.com/parallax/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://matthew.wagerfield.com/parallax/ -O1 "C:\My Web Sites\infox_hero" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+01:15:37	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/parallax.js (from matthew.wagerfield.com/parallax/)
+01:16:28	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/apple-touch-startup-image-320x460.png (from matthew.wagerfield.com/parallax/)
+01:16:28	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/apple-touch-startup-image-640x920.png (from matthew.wagerfield.com/parallax/)
+01:16:28	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/apple-touch-startup-image-768x1004.png (from matthew.wagerfield.com/parallax/)
+01:16:28	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/apple-touch-startup-image-748x1024.png (from matthew.wagerfield.com/parallax/)
+01:16:28	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/apple-touch-startup-image-1536x2008.png (from matthew.wagerfield.com/parallax/)
+01:16:28	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/apple-touch-startup-image-2048x1496.png (from matthew.wagerfield.com/parallax/)
+01:16:29	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_right.png (from matthew.wagerfield.com/parallax/assets/styles/css/styles.css)
+01:16:29	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_right.png (from matthew.wagerfield.com/parallax/assets/styles/css/styles.css)
+01:16:29	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_left.png (from matthew.wagerfield.com/parallax/assets/styles/css/styles.css)
+01:16:29	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_right.png (from matthew.wagerfield.com/parallax/assets/styles/css/styles.css)
+01:16:29	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_right2x.png (from matthew.wagerfield.com/parallax/assets/styles/css/styles.css)
+01:16:29	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_right2x.png (from matthew.wagerfield.com/parallax/assets/styles/css/styles.css)
+01:16:29	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_left2x.png (from matthew.wagerfield.com/parallax/assets/styles/css/styles.css)
+01:16:30	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_right2x.png (from matthew.wagerfield.com/parallax/assets/styles/css/styles.css)
+01:16:30	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from connect.facebook.net/en_GB/all.js)
+01:16:30	Error: 	"Not Found" (404) at link matthew.wagerfield.com/parallax/^([^:/? (from connect.facebook.net/en_GB/all.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 44 seconds : 58 links scanned, 40 files written (1787460 bytes overall) [1579373 bytes received at 15186 bytes/sec], 652802 bytes transferred using HTTP compression in 28 files, ratio 37%, 5.0 requests per connection
+(17 errors, 0 warnings, 0 messages)
