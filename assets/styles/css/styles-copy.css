@@ -709,10 +709,77 @@ footer {
 .wave {
   background: transparent repeat-x;
   position: absolute;
-  width:100vw;
-  /* width: 300%; */
-  /* left: -100%;  */
-}
+  width: 300%;
+  left: -100%; }
+  .wave:after {
+    background-color: #000000;
+    position: absolute;
+    display: block;
+    content: "";
+    height: 500px;
+    width: 100%;
+    top: 100%;
+    left: 0; }
+  .wave.plain {
+    background-image: url(../../images/wave-plain.png); }
+  .wave.paint {
+    background-image: url(../../images/wave-paint.png); }
+
+.light {
+  margin: -120px -120px;
+  background-size: 240px 240px;
+  height: 240px;
+  width: 240px;
+  background-repeat: no-repeat;
+  bottom: 112px;
+  position: absolute;
+  left: 50%; }
+  .light.orange {
+    background-image: url(../../images/light-orange.png); }
+  .light.purple {
+    background-image: url(../../images/light-purple.png); }
+  .light.a {
+    bottom: 80px;
+    left: 20%; }
+  .light.b {
+    bottom: 80px;
+    left: 30%; }
+  .light.c {
+    bottom: 112px;
+    left: 45%; }
+  .light.d {
+    bottom: 96px;
+    left: 60%; }
+  .light.e {
+    bottom: 112px;
+    left: 75%; }
+  .light.f {
+    bottom: 64px;
+    left: 80%; }
+  .light.phase-1 {
+    -webkit-animation: phase 20s 0.1s infinite linear;
+    -moz-animation: phase 20s 0.1s infinite linear;
+    animation: phase 20s 0.1s infinite linear; }
+  .light.phase-2 {
+    -webkit-animation: phase 18s 0.1s infinite linear;
+    -moz-animation: phase 18s 0.1s infinite linear;
+    animation: phase 18s 0.1s infinite linear; }
+  .light.phase-3 {
+    -webkit-animation: phase 16s 0.1s infinite linear;
+    -moz-animation: phase 16s 0.1s infinite linear;
+    animation: phase 16s 0.1s infinite linear; }
+  .light.phase-4 {
+    -webkit-animation: phase 14s 0.1s infinite linear;
+    -moz-animation: phase 14s 0.1s infinite linear;
+    animation: phase 14s 0.1s infinite linear; }
+  .light.phase-5 {
+    -webkit-animation: phase 12s 0.1s infinite linear;
+    -moz-animation: phase 12s 0.1s infinite linear;
+    animation: phase 12s 0.1s infinite linear; }
+  .light.phase-6 {
+    -webkit-animation: phase 10s 0.1s infinite linear;
+    -moz-animation: phase 10s 0.1s infinite linear;
+    animation: phase 10s 0.1s infinite linear; }
 
 .rope {
   width: 120%;
@@ -811,9 +878,9 @@ footer {
   animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
 .wave.depth-10 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 8s 0.1s infinite linear;
+  -moz-animation: wave 8s 0.1s infinite linear;
+  animation: wave 8s 0.1s infinite linear;
   bottom: 140px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -833,9 +900,9 @@ footer {
     transform: scale(0.25); }
 
 .wave.depth-20 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 7.55556s 0.1s infinite linear;
+  -moz-animation: wave 7.55556s 0.1s infinite linear;
+  animation: wave 7.55556s 0.1s infinite linear;
   bottom: 120px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -855,9 +922,9 @@ footer {
     transform: scale(0.27778); }
 
 .wave.depth-30 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 7.11111s 0.1s infinite linear;
+  -moz-animation: wave 7.11111s 0.1s infinite linear;
+  animation: wave 7.11111s 0.1s infinite linear;
   bottom: 100px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -877,9 +944,9 @@ footer {
     transform: scale(0.30556); }
 
 .wave.depth-40 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.66667s 0.1s infinite linear;
+  -moz-animation: wave 6.66667s 0.1s infinite linear;
+  animation: wave 6.66667s 0.1s infinite linear;
   bottom: 80px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -899,9 +966,9 @@ footer {
     transform: scale(0.33333); }
 
 .wave.depth-50 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.22222s 0.1s infinite linear;
+  -moz-animation: wave 6.22222s 0.1s infinite linear;
+  animation: wave 6.22222s 0.1s infinite linear;
   bottom: 60px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -921,9 +988,9 @@ footer {
     transform: scale(0.36111); }
 
 .wave.depth-60 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 5.77778s 0.1s infinite linear;
+  -moz-animation: wave 5.77778s 0.1s infinite linear;
+  animation: wave 5.77778s 0.1s infinite linear;
   bottom: 40px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -943,9 +1010,9 @@ footer {
     transform: scale(0.38889); }
 
 .wave.depth-70 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 5.33333s 0.1s infinite linear;
+  -moz-animation: wave 5.33333s 0.1s infinite linear;
+  animation: wave 5.33333s 0.1s infinite linear;
   bottom: 20px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -965,9 +1032,9 @@ footer {
     transform: scale(0.41667); }
 
 .wave.depth-80 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 4.88889s 0.1s infinite linear;
+  -moz-animation: wave 4.88889s 0.1s infinite linear;
+  animation: wave 4.88889s 0.1s infinite linear;
   bottom: 0px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -987,9 +1054,9 @@ footer {
     transform: scale(0.44444); }
 
 .wave.depth-90 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 4.44444s 0.1s infinite linear;
+  -moz-animation: wave 4.44444s 0.1s infinite linear;
+  animation: wave 4.44444s 0.1s infinite linear;
   bottom: -20px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -1009,9 +1076,9 @@ footer {
     transform: scale(0.47222); }
 
 .wave.depth-100 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 4s 0.1s infinite linear;
+  -moz-animation: wave 4s 0.1s infinite linear;
+  animation: wave 4s 0.1s infinite linear;
   bottom: -40px;
   margin: 0px 0px;
   background-position: center bottom;

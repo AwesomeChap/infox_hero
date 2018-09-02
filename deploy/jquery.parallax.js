@@ -341,9 +341,7 @@
   क्यूंकि, वह लिखा था कि
   “यहाँ सोने पर लोन दिया जाता है”
 
-  tum pakade jaoge... yeh message 4 jagah or chhapa he...
-  code chori kroge to phasoge... 
-                                        ~ AwesomeChap ^_^
+  ~ AwesomeChap ^_^
   */
 
   Plugin.prototype.calibrate = function(x, y) {
