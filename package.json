@@ -1,0 +1,19 @@
+{
+  "name": "infox_hero",
+  "version": "1.0.0",
+  "description": "https://awesomechap.github.io/infox_hero",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AwesomeChap/infox_hero.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AwesomeChap/infox_hero/issues"
+  },
+  "homepage": "https://github.com/AwesomeChap/infox_hero#readme"
+}

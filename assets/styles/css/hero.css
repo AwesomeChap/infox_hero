@@ -5,21 +5,40 @@
     display:flex;
     /* margin: auto; */
     justify-content: space-evenly;
+    /* flex-wrap: wrap; */
     /* justify-content:center; */
 }
 
+.hero-items div{
+    background-color: red;
+    color:white !important;
+}
 
 .wave.depth-100.hero-items div{
     /* padding: 0 10%; */
-    margin: 100px 25%;
+    margin:170px 25%;
     /* left:-10%; */
 }
 
 .wave.depth-70.hero-items div{
-    margin: 30px -10%;
+    margin: 170px -10%;
 }
 
 .wave.depth-50.hero-items div{
     color:red;
-    margin: 0px 35%;
+    margin: 150px 35%;
 }
+
+.hero-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+

@@ -710,6 +710,7 @@ footer {
   background: transparent repeat-x;
   position: absolute;
   width:100vw;
+  height: auto !important;
   /* width: 300%; */
   /* left: -100%;  */
 }
@@ -811,9 +812,9 @@ footer {
   animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
 .wave.depth-10 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: 140px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -833,9 +834,9 @@ footer {
     transform: scale(0.25); }
 
 .wave.depth-20 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: 120px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -855,9 +856,9 @@ footer {
     transform: scale(0.27778); }
 
 .wave.depth-30 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: 100px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -877,9 +878,9 @@ footer {
     transform: scale(0.30556); }
 
 .wave.depth-40 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: 80px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -899,9 +900,9 @@ footer {
     transform: scale(0.33333); }
 
 .wave.depth-50 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: 60px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -921,9 +922,9 @@ footer {
     transform: scale(0.36111); }
 
 .wave.depth-60 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: 40px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -943,9 +944,9 @@ footer {
     transform: scale(0.38889); }
 
 .wave.depth-70 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: 20px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -965,9 +966,9 @@ footer {
     transform: scale(0.41667); }
 
 .wave.depth-80 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: 0px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -987,9 +988,9 @@ footer {
     transform: scale(0.44444); }
 
 .wave.depth-90 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: -20px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -1009,9 +1010,9 @@ footer {
     transform: scale(0.47222); }
 
 .wave.depth-100 {
-  -webkit-animation: wave 5.5s 0.1s infinite linear;
-  -moz-animation: wave 5.5s 0.1s infinite linear;
-  animation: wave 5.5s 0.1s infinite linear;
+  -webkit-animation: wave 6.5s 0.1s infinite linear;
+  -moz-animation: wave 6.5s 0.1s infinite linear;
+  animation: wave 6.5s 0.1s infinite linear;
   bottom: -40px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -1925,40 +1926,40 @@ a, button {
     transform: rotateZ( 20deg); } }
 @-webkit-keyframes wave {
   0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg); }
+    -webkit-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg); }
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg); } }
+    -webkit-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg); } }
 @-moz-keyframes wave {
   0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg); }
+    -webkit-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg); }
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg); } }
+    -webkit-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg); } }
 @-ms-keyframes wave {
   0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg); }
+    -webkit-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg); }
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg); } }
+    -webkit-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg); } }
 @keyframes wave {
   0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,7%,0) rotateZ(0deg); }
+    -webkit-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg); }
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,7%,0) rotateZ(-360deg); } }
+    -webkit-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg); } }
 @-webkit-keyframes lighthouse {
   0% {
     -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
