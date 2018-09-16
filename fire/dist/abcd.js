@@ -70,7 +70,7 @@ scene.add( box );
 
 var string ='<div class="model-wrapper">'+
             '<x-model class="model" src="duck.gltf"></x-model>'+
-            '<div class="model-text model-text2">Sample</div>'+
+            '<div class="model-text"></div>'+
             '</div>';
 
 
@@ -159,7 +159,7 @@ window.addEventListener( 'resize', function () {
 
 $(document).ready(function(){
     $(".model-text").hover(function(){
-        // $('.model-text').css({visibility:'visible'});
+        $('.model-text').html('Sample').promise().done(function(){});
         $(".model").css({display:'none'}).promise().done(function(){
             $('.model-text').animate(
                 {
@@ -171,7 +171,7 @@ $(document).ready(function(){
             });
         });
         }, function(){
-            // $('.model-text').css({visibility:'hidden'});
+            $('.model-text').html('').promise().done(function(){});
             $('.model-text').animate(
                 {
                     fontSize:'0.5px',
