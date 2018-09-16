@@ -68,7 +68,10 @@ scene.add( box );
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
 
-var string ='<div class="model-wrapper"><x-model class="model" src="duck.gltf"></x-model><div class="model-text">Text1</div></div>';
+var string ='<div class="model-wrapper">'+
+            '<x-model class="model" src="duck.gltf"></x-model>'+
+            '<div class="model-text model-text2">Sample</div>'+
+            '</div>';
 
 
 var scene2 = new THREE.Scene();
@@ -77,6 +80,7 @@ renderer2 = new THREE.CSS3DRenderer();
 renderer2.setSize(width, height);
 renderer2.domElement.style.position = 'absolute';
 renderer2.domElement.style.top = 0;
+// rebderer2.domElement.style.overflow = 'hidden';
 
 cometContainer.appendChild( renderer2.domElement );
 var clone = createCSS3DObject(string);
@@ -154,10 +158,31 @@ window.addEventListener( 'resize', function () {
 // Jquery code for text reveal
 
 $(document).ready(function(){
-    $(".model-wrapper").hover(function(){
-        $(".model").css({display:'none'});
+    $(".model-text").hover(function(){
+        // $('.model-text').css({visibility:'visible'});
+        $(".model").css({display:'none'}).promise().done(function(){
+            $('.model-text').animate(
+                {
+                    fontSize:'2px',
+                },500, 'easeOutBack',function(){
+                // alert('animate');
+                // width:10px;
+	            // height: 10px;
+            });
+        });
         }, function(){
-        $(".model").css({display:'inline-block'});
+            // $('.model-text').css({visibility:'hidden'});
+            $('.model-text').animate(
+                {
+                    fontSize:'0.5px',
+                },0,function(){
+                // alert('animate');
+                // width:10px;
+	            // height: 10px;
+            });
+            $(".model").css({display:'inline-block'}).promise().done(function(){
+                $(".model").animate({transform:'scale(1,1)'});
+        });
     });
 });
 

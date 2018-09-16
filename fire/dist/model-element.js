@@ -560,7 +560,9 @@
       'position:fixed;' +
       'top:0;' +
       'left:0;' +
-      'pointer-events:none' +
+      'pointer-events:none;' +
+      // 'background-color:red;'+
+      // 'overflow:hidden' +
     '}' +
     'x-model{' +
       'display:inline-block;' +
