@@ -1,12 +1,6 @@
 .hero-items{
-    /* width: 100vw !important; */
-    /* position: absolute; */
-    /* font-size: 1000px !important; */
     display:flex;
-    /* margin: auto; */
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-    /* justify-content:center; */
 }
 
 .hero-items div{
@@ -15,9 +9,7 @@
 }
 
 .wave.depth-100.hero-items div{
-    /* padding: 0 10%; */
     margin:170px 25%;
-    /* left:-10%; */
 }
 
 .wave.depth-70.hero-items div{

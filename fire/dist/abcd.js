@@ -69,7 +69,7 @@ scene.add( box );
 /*-------------------------------------------------------*/
 
 var string ='<div class="model-wrapper">'+
-            '<x-model class="model" src="duck.gltf"></x-model>'+
+            '<x-model class="model" src="sphere.gltf"></x-model>'+
             '<div class="model-text"></div>'+
             '</div>';
 

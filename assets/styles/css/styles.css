@@ -213,11 +213,11 @@ html {
   font-size: 12px; }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  line-height: 1.4em;
+  /* -webkit-font-smoothing: antialiased; */
+  /* text-rendering: optimizeLegibility; */
+  /* line-height: 1.4em; */
   background-color: #000000;
-  text-align: center;
+  /* text-align: center; */
   color: #FFFFFF; }
 
 h1, h2, h3 {
@@ -812,9 +812,9 @@ footer {
   animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
 .wave.depth-10 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: 140px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -834,9 +834,9 @@ footer {
     transform: scale(0.25); }
 
 .wave.depth-20 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: 120px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -856,9 +856,9 @@ footer {
     transform: scale(0.27778); }
 
 .wave.depth-30 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: 100px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -878,9 +878,9 @@ footer {
     transform: scale(0.30556); }
 
 .wave.depth-40 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: 80px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -900,9 +900,9 @@ footer {
     transform: scale(0.33333); }
 
 .wave.depth-50 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: 60px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -922,9 +922,9 @@ footer {
     transform: scale(0.36111); }
 
 .wave.depth-60 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: 40px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -944,9 +944,9 @@ footer {
     transform: scale(0.38889); }
 
 .wave.depth-70 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: 20px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -966,9 +966,9 @@ footer {
     transform: scale(0.41667); }
 
 .wave.depth-80 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: 0px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -988,9 +988,9 @@ footer {
     transform: scale(0.44444); }
 
 .wave.depth-90 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: -20px;
   margin: 0px 0px;
   background-position: center bottom;
@@ -1010,9 +1010,9 @@ footer {
     transform: scale(0.47222); }
 
 .wave.depth-100 {
-  -webkit-animation: wave 6.5s 0.1s infinite linear;
-  -moz-animation: wave 6.5s 0.1s infinite linear;
-  animation: wave 6.5s 0.1s infinite linear;
+  /* -webkit-animation: wave 6.5s 0.1s infinite linear; */
+  /* -moz-animation: wave 6.5s 0.1s infinite linear; */
+  /* animation: wave 6.5s 0.1s infinite linear; */
   bottom: -40px;
   margin: 0px 0px;
   background-position: center bottom;

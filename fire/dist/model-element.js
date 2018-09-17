@@ -344,10 +344,11 @@
     scene = new THREE.Scene();
 
     // add a light
-    light = new THREE.PointLight(0x808080, 2, 0);
+    light = new THREE.PointLight('#fff', 2, 0);
     light.position.set(0, 0, 0);
-    light.castShadow = true;
+    // light.castShadow = true;
     scene.add(light);
+  
 
     /*
     var sphereSize = .5;
