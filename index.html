@@ -26,29 +26,21 @@
 	<script src="dist/OrbitControls.js"></script>
 	<script src="dist/TrackballControls.js"></script>
 	<script src="dist/CSS3DRenderer.js"></script>
-	<!-- Google Analytics -->
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-39594063-4', 'wagerfield.github.io');
-	ga('send', 'pageview');
-	</script>
 
 	<style>
-		
 
 	</style>
 
 </head>
 <body>
 
-	
-	<!---->
-	<canvas id="c"></canvas>
 
 	<!---->
+	
+
+	<!---->
+	
+	<canvas id="c"></canvas>
 	<div class="layer">
 		<div class="sub-layer layer1">
 				<div class="helper"><div id="comet"></div></div>
@@ -62,6 +54,11 @@
 				<div class="helper"><div id="comet5"></div></div>
 				<div class="helper"><div id="comet6"></div></div>
 		</div>
+		<div class="know-more"></div>
+	</div>
+	
+	<div class="know-block">
+		<div class="cross">X</div>
 	</div>
 
 	<!---->
@@ -70,7 +67,46 @@
 	<!---->
 
 	<!-- Scripts -->
+
+	<script src="dist/custom-element-polyfill.min.js"></script>
+	<script src="dist/three-gltf-loader.min.js"></script>
+	<script src="dist/three-obj-loader.min.js"></script>
+	<script src="dist/model-element.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="dist/abcd/abcd1.js"></script>
+	<!-- <script src="assets/scripts/js/libraries.min.js"></script> -->
+	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 	<script>
+		$(".know-more").click(function(){
+			$('.layer').animate({
+				bottom:'-500px'
+			},'easeInQuart',function(){
+				$('.know-block').animate({
+					top:'0'
+				},function(){
+
+				})
+			})
+		});
+		$(".cross").click(function(){
+			$('.know-block').animate({
+				top:'-100%'
+			},function(){
+				$('.layer').animate({
+					bottom:'0'
+				},function(){
+
+				})
+			})
+		});
+	</script>
+	<script>
+		$( window ).resize(function() {
+			$("#c").width($( window ).width())
+			$("#c").height($( window ).height())
+		});
 		D = document;
 		d = D.body.style;
 		d.margin = 0;
@@ -113,16 +149,6 @@
 		}
 		setInterval('k.fillStyle="#000";k.fillRect(0,0,d,e);for(a=i-d/2+d/2,f=j-e/2+e/2,h=0;h<V;h++){b=q[h],x=b.x/b.a,y=b.y/b.a,z=1/b.a*5+1,A=n(Q*h+r)*64+W,B=n(Q*h+2+r)*64+W,C=n(Q*h+4+r)*64+W;if(b.b!=0){k.strokeStyle="rgb("+o(A)+","+o(B)+","+o(C)+")";k.lineWidth=z;k.beginPath();k.moveTo(x+a,y+f);k.lineTo(b.b+a,b.c+f);k.stroke()}b.b=x;b.c=y;b.a-=s;if(b.a<s||b.b>d||b.c>e)u(b)}r+=0.1;', 25);
 	</script>
-	<script src="dist/custom-element-polyfill.min.js"></script>
-	<script src="dist/three-gltf-loader.min.js"></script>
-	<script src="dist/three-obj-loader.min.js"></script>
-	<script src="dist/model-element.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="dist/abcd/abcd1.js"></script>
-	<!-- <script src="assets/scripts/js/libraries.min.js"></script> -->
-	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 
 </body>
 
