@@ -41,6 +41,16 @@
 	<!---->
 	
 	<canvas id="c"></canvas>
+	<div class="logo-section">
+		<div class="logo-container">
+			<!-- <img src="obj/logo.png" alt=""> -->
+		</div>
+		<div class="date-container">
+			<div class="date">OCT 12th-14th 2018</div>
+			<div class="ggsipu">TECHSPACE USICT | GGSIPU</div>
+		</div>
+		<div class="tagline">CELEBRATING THE SENSE OF BELONGIINGNESS</div>
+	</div>
 	<div class="layer">
 		<div class="sub-layer layer1">
 				<div class="helper"><div id="comet"></div></div>
@@ -118,6 +128,11 @@
 	<!-- <script src="assets/scripts/js/libraries.min.js"></script> -->
 	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 	<script>
+		$(function(){
+			$('.layer').animate({
+				bottom:'0px'
+			},1000,'easeOutQuad');
+		});
 		$(".know-more").click(function(){
 			$(".cross").removeClass('rotate')
 			$('.tail').css({display:'inline-block'}).promise().done(function(){
@@ -125,6 +140,21 @@
 			})
 			$('.arrow').animate({top:'70px'},'linear',function(){
 				setTimeout(function(){
+					$('.logo-container').animate({
+						top:'-22%',
+						opacity:0
+					},400,'easeInQuart');
+
+					$('.date-container').animate({
+						left:'-50%',
+						opacity:0
+					},400,'easeInQuart');
+
+					$('.tagline').animate({
+						left:'150%',
+						opacity:0
+					},400,'easeInQuart');
+
 					$('.layer').animate({
 						bottom:'-500px'
 					},400,'easeInQuart',function(){
@@ -142,6 +172,20 @@
 			setTimeout(function(){
 				$('.arrow').animate({top:'18px'},200,'easeInQuart')
 				$('.tail').css({display:'none'})
+				$('.logo-container').animate({
+					top:'22%',
+					opacity:1
+				},600,'easeInQuart');
+
+				$('.date-container').animate({
+					left:'50%',
+					opacity:1
+				},600,'easeInQuart');
+
+				$('.tagline').animate({
+					left:'50%',
+					opacity:1
+				},600,'easeInQuart');
 				$('.know-block').animate({
 					top:'-100%'
 				},400,'easeInQuart',function(){
