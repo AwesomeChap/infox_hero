@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
 
 	<meta charset="utf-8">
@@ -17,7 +15,9 @@
 	<link rel="author" href="humans.txt" />
 
 	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/timer.css">
+	<link rel="stylesheet" href="css/10_pieces.css">
 	<!-- <link rel="stylesheet" type="text/css" href="assets/styles/css/hero.css"/> -->
 
 	<!-- Scripts -->
@@ -64,6 +64,38 @@
 	
 	<div class="know-block">
 		<div class="cross">X</div>
+		<div class="events-block">
+			<div class="wrapper_container">
+					<div class="div1"></div>
+					<div class="div2"></div>
+					<div class="div3"></div>
+					<div class="div4"></div>
+					<div class="div5"></div>
+					<div class="div6"></div>
+					<div class="div7"></div>
+					<div class="div8"></div>
+					<div class="div9"></div>
+					<div class="div10"></div>
+			</div>
+			<div class="events-data">
+				<div class="heading">EVENTS</div>
+				<p>
+					Participate in the biggest technical extravaganza held at Guru Gobind Singh Indraprastha University which involves an active participation of students from over 250 colleges of north India.
+				</p>
+				<div class="button">View Events</div>
+			</div>
+		</div>
+		<div class="timer-container">
+			<div class="heading">FEST STARTS IN</div>
+			<div class="timer-wrapper">
+				<div id="countup">
+					<div class="part"><div id="d"></div></div>
+					<div class="part"><div id="h"></div></div>
+					<div class="part"><div id="m"></div></div>
+					<div class="part"><div id="s"></div></div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!---->
@@ -90,7 +122,7 @@
 				setTimeout(function(){
 					$('.layer').animate({
 						bottom:'-500px'
-					},200,'easeInQuart',function(){
+					},400,'easeInQuart',function(){
 						$('.know-block').animate({
 							top:'0'
 						},function(){
@@ -105,7 +137,7 @@
 			$('.tail').css({display:'none'})
 			$('.know-block').animate({
 				top:'-100%'
-			},200,'easeInQuart',function(){
+			},400,'easeInQuart',function(){
 				$('.layer').animate({
 					bottom:'0'
 				},function(){
@@ -161,7 +193,8 @@
 		}
 		setInterval('k.fillStyle="#000";k.fillRect(0,0,d,e);for(a=i-d/2+d/2,f=j-e/2+e/2,h=0;h<V;h++){b=q[h],x=b.x/b.a,y=b.y/b.a,z=1/b.a*5+1,A=n(Q*h+r)*64+W,B=n(Q*h+2+r)*64+W,C=n(Q*h+4+r)*64+W;if(b.b!=0){k.strokeStyle="rgb("+o(A)+","+o(B)+","+o(C)+")";k.lineWidth=z;k.beginPath();k.moveTo(x+a,y+f);k.lineTo(b.b+a,b.c+f);k.stroke()}b.b=x;b.c=y;b.a-=s;if(b.a<s||b.b>d||b.c>e)u(b)}r+=0.1;', 25);
 	</script>
-
+	<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+	<script src="dist/abcd/timer.js"></script>
 </body>
 
 </html>
