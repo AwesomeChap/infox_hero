@@ -54,7 +54,10 @@
 				<div class="helper"><div id="comet5"></div></div>
 				<div class="helper"><div id="comet6"></div></div>
 		</div>
-		<div class="know-more"></div>
+		<div class="know-more">
+			<div class="tail">I</div>
+			<div class="arrow"></div>
+		</div>
 	</div>
 	
 	<div class="know-block">
@@ -80,20 +83,27 @@
 	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 	<script>
 		$(".know-more").click(function(){
-			$('.layer').animate({
-				bottom:'-500px'
-			},'easeInQuart',function(){
-				$('.know-block').animate({
-					top:'0'
-				},function(){
+			$('.arrow').animate({top:'70px'},200,'easeInQuart')
+			$('.tail').css({display:'inline-block'}).promise().done(function(){
+				setTimeout(function(){
+					$('.layer').animate({
+						bottom:'-500px'
+					},200,'easeInQuart',function(){
+						$('.know-block').animate({
+							top:'0'
+						},function(){
 
-				})
-			})
+						})
+					})
+				},500);
+			});
 		});
 		$(".cross").click(function(){
+			$('.arrow').animate({top:'18px'},200,'easeInQuart')
+			$('.tail').css({display:'none'})
 			$('.know-block').animate({
 				top:'-100%'
-			},function(){
+			},200,'easeInQuart',function(){
 				$('.layer').animate({
 					bottom:'0'
 				},function(){
