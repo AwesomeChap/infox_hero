@@ -57,7 +57,7 @@
 		<div class="know-more-2"></div>
 		<!-- <div class="know-more-3"></div> -->
 		<div class="know-more">
-			<div class="tail">I</div>
+			<div class="tail"></div>
 			<div class="arrow"></div>
 		</div>
 	</div>
@@ -119,8 +119,11 @@
 	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 	<script>
 		$(".know-more").click(function(){
-			$('.arrow').animate({top:'70px'},200,'easeInQuart')
+			$(".cross").removeClass('rotate')
 			$('.tail').css({display:'inline-block'}).promise().done(function(){
+				$('.tail').addClass('animated-tail');
+			})
+			$('.arrow').animate({top:'70px'},'linear',function(){
 				setTimeout(function(){
 					$('.layer').animate({
 						bottom:'-500px'
@@ -131,21 +134,24 @@
 
 						})
 					})
-				},500);
-			});
+				},200);
+			})
 		});
 		$(".cross").click(function(){
-			$('.arrow').animate({top:'18px'},200,'easeInQuart')
-			$('.tail').css({display:'none'})
-			$('.know-block').animate({
-				top:'-100%'
-			},400,'easeInQuart',function(){
-				$('.layer').animate({
-					bottom:'0'
-				},function(){
+			$(".cross").addClass('rotate')
+			setTimeout(function(){
+				$('.arrow').animate({top:'18px'},200,'easeInQuart')
+				$('.tail').css({display:'none'})
+				$('.know-block').animate({
+					top:'-100%'
+				},400,'easeInQuart',function(){
+					$('.layer').animate({
+						bottom:'0'
+					},function(){
 
+					})
 				})
-			})
+			},200);
 		});
 	</script>
 	<script>

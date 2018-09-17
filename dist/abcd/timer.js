@@ -7,28 +7,28 @@
 
   var seconds = new ProgressBar.Circle(elements, {
       duration: 200,
-      color: "#4286f4",
+      color: "yellow",
       trailColor: "white",
       strokeWidth: 5,
       trailWidth: 3
   });
   var minutes = new ProgressBar.Circle(elementm, {
       duration: 200,
-      color: "#8ec5ff",
+      color: "orange",
       trailColor: "white",
       strokeWidth: 5,
       trailWidth: 3
   });
   var hours = new ProgressBar.Circle(elementh, {
       duration: 200,
-      color: "magenta",
+      color: "orangered",
       trailColor: "white",
       strokeWidth: 5,
       trailWidth: 3
   });
   var days = new ProgressBar.Circle(elementd, {
       duration: 200,
-      color: "#cc66ff",
+      color: "red",
       trailColor: "white",
       strokeWidth: 5,
       trailWidth: 3

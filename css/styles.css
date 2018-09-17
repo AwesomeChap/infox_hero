@@ -459,9 +459,31 @@ body{
 
 
 .tail{
+    width: 4px;
+    height: 4px;
+    /* border-radius: 5px; */
     position: absolute;
+    background-color:white;
+    /* top:18px; */
+    /* z-index: 10; */
     display:none;
-    transform:scale(1,4) translate(0px,5px);
+    transform:scale(1,1) translate(10%,10%);
+}
+
+.animated-tail{
+    animation: elongate 1.5s linear 1;
+}
+
+@keyframes elongate{
+    0%{
+        transform:scale(1,1) translate(10%,10%);
+    }
+    15%{
+        transform:scale(1,13) translate(10%,51%);
+    }
+    100%{
+        transform:scale(1,13) translate(10%,51%);
+    }
 }
 
 .arrow{
@@ -507,11 +529,24 @@ body{
     font-weight: 700;
     font-size: 20px;
     cursor: pointer;
-    transition: all 0.05s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .cross:hover{
     transform:scale(1.2);
+}
+
+.rotate{
+    animation: rotation .5s linear 3;
+}
+
+@keyframes rotation{
+    from{
+        transform:rotateZ(0deg);
+    }
+    to{
+        transform:rotateZ(359deg);
+    }
 }
 
 .events-block{
