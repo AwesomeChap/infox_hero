@@ -610,6 +610,7 @@ a{
 .button:hover .btn-text{
     left:0%
 }
+
 .heading{
     padding:5px 10px;
     font-size: 30px;
@@ -619,7 +620,7 @@ a{
 }
 
 .logo-section{
-    position:absolute
+    /* position:absolute; */
     font:white;
     font-size: 22px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -631,7 +632,7 @@ a{
     height: 250px;
     border:2px solid red;
     position: absolute;
-    top:22%;
+    top:25%;
     left:50%;
     transform: translate(-50%,-50%);
     background-color: transparent;
@@ -650,30 +651,35 @@ img{
     height: 30px;
     /* border:2px solid red; */
     position: absolute;
-    top:46%;
+    top:48%;
     left:50%;
     transform: translate(-50%,-50%);
     background-color: transparent;
     display:flex;
     justify-content: space-between;
     overflow:hidden;
-    color:#aaaaaa;
+    color:#ffffff;
     animation:fadeInDown .5s ease-in-out 0s 1;
 }
 
+.ggsipu{
+    color:#aaa;
+}
+
 .tagline{
+    opacity:0;
     text-align: center;
     /* margin:0 auto; */
     width:500px;
     height: 30px;
     /* border:2px solid red; */
     position: absolute;
-    top:53%;
+    top:54%;
     left:50%;
     transform: translate(-50%,-50%);
     background-color: transparent;
     color:white;
-    animation:fadeInDown .5s ease-in-out 0.3s 1;
+    /* animation:fadeInDown .5s ease-in-out 0.3s 1; */
 }
 
 @keyframes fadeInDown {
@@ -686,4 +692,39 @@ img{
         opacity:1;
     }
 }
+
+.typewriter{
+    font-family: 'Inconsolata', monospace;
+    color:#00ff00;
+    font-weight: 600;
+    /* font-size: 24px; */
+}
+
+.typewriter div {
+    /* background-color: red; */
+    /* width:620px; */
+    /* padding:0 20px;
+    box-sizing: border-box; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .65em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* padding: 0 .6em; */
+    letter-spacing: .075em; /*Adjust as needed*/
+    animation: 
+      typing 3.5s steps(50, end) 1s,
+      blink-caret .75s step-end 1s infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
 

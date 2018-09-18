@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="css/timer.css">
 	<link rel="stylesheet" href="css/10_pieces.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 	<!-- <link rel="stylesheet" type="text/css" href="assets/styles/css/hero.css"/> -->
 
 	<!-- Scripts -->
@@ -49,7 +50,11 @@
 			<div class="date">OCT 12th-14th 2018</div>
 			<div class="ggsipu">TECHSPACE USICT | GGSIPU</div>
 		</div>
-		<div class="tagline">CELEBRATING THE SENSE OF BELONGIINGNESS</div>
+		<div class="tagline">
+			<div class="typewriter">
+				<div>CELEBRATING THE SENSE OF BELONGINGNESS</div>
+			</div>
+		</div>
 	</div>
 	<div class="layer">
 		<div class="sub-layer layer1">
@@ -132,6 +137,9 @@
 			$('.layer').animate({
 				bottom:'0px'
 			},1000,'easeOutQuad');
+			setTimeout(function(){
+				$('.tagline').css({opacity:1});
+			},1000);
 		});
 		$(".know-more").click(function(){
 			$(".cross").removeClass('rotate')
@@ -141,17 +149,17 @@
 			$('.arrow').animate({top:'70px'},'linear',function(){
 				setTimeout(function(){
 					$('.logo-container').animate({
-						top:'-22%',
+						top:'-25%',
 						opacity:0
 					},400,'easeInQuart');
 
 					$('.date-container').animate({
-						left:'-50%',
+						left:'0%',
 						opacity:0
 					},400,'easeInQuart');
 
 					$('.tagline').animate({
-						left:'150%',
+						left:'100%',
 						opacity:0
 					},400,'easeInQuart');
 
@@ -173,7 +181,7 @@
 				$('.arrow').animate({top:'18px'},200,'easeInQuart')
 				$('.tail').css({display:'none'})
 				$('.logo-container').animate({
-					top:'22%',
+					top:'25%',
 					opacity:1
 				},600,'easeInQuart');
 
