@@ -43,9 +43,7 @@
 	
 	<canvas id="c"></canvas>
 	<div class="logo-section">
-		<div class="logo-container">
-			<!-- <img src="obj/logo.png" alt=""> -->
-		</div>
+		<img  class="logo-container" src="obj/logo.png" alt="">
 		<div class="date-container">
 			<div class="date">OCT 12th-14th 2018</div>
 			<div class="ggsipu">TECHSPACE USICT | GGSIPU</div>
@@ -74,6 +72,11 @@
 		<div class="know-more">
 			<div class="tail"></div>
 			<div class="arrow"></div>
+		</div>
+		<div class="sponsor-layer">
+			<div></div>
+			<div></div>
+			<div></div>
 		</div>
 	</div>
 	
@@ -147,10 +150,10 @@
 			$('.tail').css({display:'inline-block'}).promise().done(function(){
 				$('.tail').addClass('animated-tail');
 			})
-			$('.arrow').animate({top:'70px'},'linear',function(){
+			$('.arrow').animate({top:'59px'},'linear',function(){
 				setTimeout(function(){
 					$('.logo-container').animate({
-						top:'-25%',
+						top:'-23%',
 						opacity:0
 					},400,'easeInQuart');
 
@@ -182,7 +185,7 @@
 				$('.arrow').animate({top:'18px'},200,'easeInQuart')
 				$('.tail').css({display:'none'})
 				$('.logo-container').animate({
-					top:'25%',
+					top:'23%',
 					opacity:1
 				},600,'easeInQuart');
 
