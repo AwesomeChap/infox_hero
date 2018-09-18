@@ -35,7 +35,6 @@
 </head>
 <body>
 
-
 	<!---->
 	
 
@@ -136,14 +135,33 @@
 	<!-- <script src="assets/scripts/js/libraries.min.js"></script> -->
 	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 	<script>
+		// $(window).load(function(){
+		// 	$('.loader-section').hide();
+		// });
+		// window.onload = function(){
+		// 	$(".loader-section").hide(); 
+		// }
+		$('body').append('<div class="loader-section"><img class="loader" src="obj/plain-logo1.svg"></div>');
+		$(window).on('load', function(){
+		setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
+		});
+		function removeLoader(){
+			$( '.loader-section').fadeOut(500, function() {
+			// fadeOut complete. Remove the loading div
+			$( '.loader-section' ).remove(); //makes page more lightweight 
+		});  
+		}
 		$(function(){
-			$('.layer').animate({
-				bottom:'0px'
-			},1000,'easeOutQuad');
+			setTimeout(function(){
+				$('.logo-container').animate({opacity:1});
+				$('.layer').animate({
+					bottom:'0px'
+				},1000,'easeOutQuad');
+			},1000)
 			setTimeout(function(){
 				$('.tagline').css({opacity:1});
 				$('.date-container').css({opacity:1});
-			},1000);
+			},2200);
 		});
 		$(".know-more").click(function(){
 			$(".cross").removeClass('rotate')

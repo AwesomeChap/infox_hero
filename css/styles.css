@@ -636,6 +636,7 @@ a{
     left:50%;
     transform: translate(-50%,-50%);
     background-color: transparent;
+    opacity:0;
     /* display:flex;
     flex-wrap:wrap; */
 }
@@ -657,7 +658,7 @@ a{
     justify-content: space-evenly;
     /* overflow:hidden; */
     color:#ffffff;
-    animation:fadeInDown .5s ease-in-out 1s 1;
+    animation:fadeInDown .5s ease-in-out 2.2s 1;
 }
 
 .ggsipu{
@@ -710,7 +711,7 @@ a{
     /* padding: 0 .6em; */
     letter-spacing: .075em; /*Adjust as needed*/
     animation: 
-      typing 3.5s steps(40, end) 1s,
+      typing 3.5s steps(40, end) 2.2s,
       blink-caret .75s step-end 1s infinite;
   }
   
@@ -740,5 +741,37 @@ a{
     color: blue !important;
     background-image: linear-gradient(blue,rgb(0, 0, 175),rgb(0, 0, 175),blue);
 
+  }
+
+  .loader-section{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color:#111111;
+    z-index:99;
+  }
+
+  .loader{
+      position: absolute;
+      z-index: 100;
+      top:50%;
+      left:50%;
+      opacity:1;
+      transform:translate(-50%,-50%);
+      width:250px;
+      animation:loading 2s linear infinite;
+  }
+
+  @keyframes loading{
+      from{
+          opacity: 1;
+          transform:translate(-50%,-50%) scale(1);
+      }
+      to{
+          opacity: 0;
+          transform:translate(-90%,-50%) scale(10);
+      }
   }
 
