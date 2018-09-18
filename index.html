@@ -143,7 +143,7 @@
 		// }
 		$('body').append('<div class="loader-section"><img class="loader" src="obj/plain-logo1.svg"></div>');
 		$(window).on('load', function(){
-		setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
+		setTimeout(removeLoader, 800); //wait for page load PLUS two seconds.
 		});
 		function removeLoader(){
 			$( '.loader-section').fadeOut(500, function() {
