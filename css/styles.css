@@ -644,7 +644,7 @@ a{
     font-family: 'Inconsolata', monospace;
     /* margin:0 auto; */
     opacity:0;
-    width:600px;
+    width:60%;
     height: 30px;
     font-size: 25px;
     /* border:2px solid red; */
@@ -654,7 +654,7 @@ a{
     transform: translate(-50%,-50%);
     background-color: transparent;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* overflow:hidden; */
     color:#ffffff;
     animation:fadeInDown .5s ease-in-out 1s 1;
