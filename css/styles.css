@@ -429,7 +429,7 @@ body{
     position: absolute;
     bottom:0;
     left:50%;
-    transform:translate(-50%,-110%) scale(1);
+    transform:translate(-50%,-112.5%) scale(1);
     border-radius:50%;
     opacity: 1;
     animation: pulse 1.5s ease-in infinite;
@@ -641,10 +641,12 @@ a{
 }
 
 .date-container{
+    font-family: 'Inconsolata', monospace;
     /* margin:0 auto; */
     opacity:0;
     width:600px;
     height: 30px;
+    font-size: 25px;
     /* border:2px solid red; */
     position: absolute;
     top:48%;
