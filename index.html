@@ -57,16 +57,16 @@
 	</div>
 	<div class="layer">
 		<div class="sub-layer layer1">
-				<div class="helper"><div id="comet"></div></div>
-				<div class="helper"><div id="comet2"></div></div>
+				<div class="helper"><div class="comets" id="comet"></div></div>
+				<div class="helper"><div class="comets" id="comet2"></div></div>
 		</div>
 		<div class="sub-layer layer2">
-				<div class="helper"><div id="comet3"></div></div>
-				<div class="helper"><div id="comet4"></div></div>
+				<div class="helper"><div class="comets" id="comet3"></div></div>
+				<div class="helper"><div class="comets" id="comet4"></div></div>
 		</div>
 		<div class="sub-layer layer3">
-				<div class="helper"><div id="comet5"></div></div>
-				<div class="helper"><div id="comet6"></div></div>
+				<div class="helper"><div class="comets" id="comet5"></div></div>
+				<div class="helper"><div class="comets"id="comet6"></div></div>
 		</div>
 		<div class="know-more-2"></div>
 		<!-- <div class="know-more-3"></div> -->
@@ -168,9 +168,9 @@
 		});
 		$(".know-more").click(function(){
 			$(".cross").removeClass('rotate')
-			$('.tail').css({display:'inline-block'}).promise().done(function(){
-				$('.tail').addClass('animated-tail');
-			})
+			// $('.tail').css({display:'inline-block'}).promise().done(function(){
+			// 	$('.tail').addClass('animated-tail');
+			// })
 			$('.arrow').animate({top:'59px'},'linear',function(){
 				setTimeout(function(){
 					$('.logo-container').animate({
@@ -204,7 +204,7 @@
 		$(".cross").click(function(){
 			$(".cross").addClass('rotate')
 			setTimeout(function(){
-				$('.arrow').animate({top:'18px'},200,'easeInQuart')
+				$('.arrow').animate({top:'26px'},200,'easeInQuart')
 				$('.tail').css({display:'none'})
 				$('.logo-container').animate({
 					top:'23%',

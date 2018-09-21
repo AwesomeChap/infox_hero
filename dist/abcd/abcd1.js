@@ -120,33 +120,33 @@ scene.add( box );
 
 var string =
             '<div class="model-wrapper">'+
-            '<x-model id="model" src="obj/sphere.gltf"></x-model>'+
-            '<div id="model-text"></div>'+
+            '<x-model class="models" id="model" src="obj/sphere.gltf"></x-model>'+
+            '<div class="model-texts" id="model-text"></div>'+
             '</div>'
             ;
 var string2 ='<div class="model-wrapper">'+
-            '<x-model id="model2" src="obj/sphere.gltf"></x-model>'+
-            '<div id="model-text2"></div>'+
+            '<x-model class="models" id="model2" src="obj/sphere.gltf"></x-model>'+
+            '<div class="model-texts" id="model-text2"></div>'+
             '</div>';
 
 var string3 ='<div class="model-wrapper">'+
-            '<x-model id="model3" src="obj/sphere.gltf"></x-model>'+
-            '<div id="model-text3"></div>'+
+            '<x-model class="models" id="model3" src="obj/sphere.gltf"></x-model>'+
+            '<div class="model-texts" id="model-text3"></div>'+
             '</div>';
 
 var string4 ='<div class="model-wrapper">'+
-            '<x-model id="model4" src="obj/sphere.gltf"></x-model>'+
-            '<div id="model-text4"></div>'+
+            '<x-model class="models" id="model4" src="obj/sphere.gltf"></x-model>'+
+            '<div class="model-texts" id="model-text4"></div>'+
             '</div>';
 
 var string5 ='<div class="model-wrapper">'+
-            '<x-model id="model5" src="obj/sphere.gltf"></x-model>'+
-            '<div id="model-text5"></div>'+
+            '<x-model class="models" id="model5" src="obj/sphere.gltf"></x-model>'+
+            '<div class="model-texts" id="model-text5"></div>'+
             '</div>'; 
             
 var string6 ='<div class="model-wrapper">'+
-            '<x-model id="model6" src="obj/sphere.gltf"></x-model>'+
-            '<div id="model-text6"></div>'+
+            '<x-model class="models" id="model6" src="obj/sphere.gltf"></x-model>'+
+            '<div class="model-texts" id="model-text6"></div>'+
             '</div>';
 
 var scene2 = new THREE.Scene(),
