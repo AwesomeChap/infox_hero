@@ -7,8 +7,9 @@
 $('body').append('<div class="loader-section"><img class="loader" src="obj/plain-logo1.svg"></div>');
 $(window).on('load', function(){
     setTimeout(function(){
-        $('.sub-containers').css({display:'block'})
-    },2700)
+        $('.sub-containers, .icons').css({display:'block'})
+
+    },2200)
     // alert('bing bong');
 setTimeout(removeLoader, 800); //wait for page load PLUS two seconds.
 });
@@ -58,7 +59,7 @@ $(".know-more").click(function(){
                 opacity:0
             },400,'easeInQuart');
 
-            $('.sub-containers').css({display:'none'});
+            $('.sub-containers, .icons').css({display:'none'});
 
             $('.layer').animate({
                 bottom:'-500px'
@@ -76,7 +77,7 @@ $(".know-more").click(function(){
 $(".cross").click(function(){
     $(".cross").addClass('rotate')
     setTimeout(function(){
-        $('.sub-containers').css({display:'block'})
+        $('.sub-containers, .icons').css({display:'block'})
         $('.arrow').animate({top:'26px'},200,'easeInQuart')
         $('.tail').css({display:'none'})
         $('.logo-container').animate({
