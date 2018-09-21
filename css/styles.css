@@ -363,6 +363,7 @@ body{
 }
 
 .know-block{
+    z-index:1000;
     position: absolute;
     border-radius:20px;
     -webkit-box-shadow: #ffffff;

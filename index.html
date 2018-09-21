@@ -25,12 +25,26 @@
 	<!-- Scripts -->
 	<script src="dist/3.min.js"></script>
 	<script src="dist/three-particle-fire.js"></script>
+	<!-- <script src="dist/particlesaga.min.js"></script> -->
 	<!-- <script src="dist/OrbitControls.js"></script>
 	<script src="dist/TrackballControls.js"></script> -->
 	<script src="dist/CSS3DRenderer.js"></script>
 
 	<style>
-
+		#c{
+			/* display:none; */
+			visibility: hidden;
+		}
+		#saga{
+			position: absolute;
+			top:7%;
+			left:50%;
+			transform:translate(-50%,0%);
+			width:300px;
+			height:300px;
+			background: red;
+			overflow: hidden;
+		}
 	</style>
 
 </head>
@@ -43,9 +57,15 @@
 	
 	<canvas id="c"></canvas>
 	<div class="upper-half">
-		<div class="logo-section">
+		<section id="saga">
+			<ul id="multitarget-references">
+				<li id="multitarget-reference-1"></li>
+				<li id="multitarget-reference-2"></li>
+			</ul>
+		</section>
+		<!-- <div class="logo-section">
 			<img src="obj/logo1.svg" alt="" class="logo-container">	
-		</div>
+		</div> -->
 		<div class="date-container sub-containers">
 			<div class="slider"></div>
 			<div class="date">OCT 12th-14th 2018</div>
@@ -146,6 +166,7 @@
 	<!-- <script src="assets/scripts/js/libraries.min.js"></script> -->
 	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 	<script src="dist/abcd/index.js"></script>
+	<script src="dist/abcd/index2.js"></script>
 
 	<!-- minified script for background -->
 
