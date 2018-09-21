@@ -249,7 +249,7 @@ function createCSS3DObject(s) {
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
 
-var SPEED = 0.01;
+var SPEED = 0.03;
 
 function rotateCube() {
     // box.rotation.x -= SPEED * 2;

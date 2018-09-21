@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="css/timer.css">
 	<link rel="stylesheet" href="css/10_pieces.css">
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 	<!-- <link rel="stylesheet" type="text/css" href="assets/styles/css/hero.css"/> -->
 	<!-- <link rel="stylesheet" href="css/logo.css"> -->
 
@@ -42,17 +42,21 @@
 	<!---->
 	
 	<canvas id="c"></canvas>
-	<div class="logo-section">
-		<img src="obj/logo1.svg" alt="" class="logo-container">	
-	</div>
-		<div class="date-container">
+	<div class="upper-half">
+		<div class="logo-section">
+			<img src="obj/logo1.svg" alt="" class="logo-container">	
+		</div>
+		<div class="date-container sub-containers">
+			<div class="slider"></div>
 			<div class="date">OCT 12th-14th 2018</div>
+		</div>
+		<div class="ggsipu-container sub-containers">
+				<div class="slider"></div>
 			<div class="ggsipu">TECHSPACE USICT | GGSIPU</div>
 		</div>
-		<div class="tagline">
-			<div class="typewriter">
-				<div>CELEBRATING THE SENSE OF BELONGING</div>
-			</div>
+		<div class="tagline-container sub-containers">
+				<div class="slider"></div>
+				<div class="tagline">Celebrating the sense of Belonging</div>
 		</div>
 	</div>
 	<div class="layer">
@@ -136,104 +140,9 @@
 	<script src="dist/abcd/abcd1.js"></script>
 	<!-- <script src="assets/scripts/js/libraries.min.js"></script> -->
 	<!-- <script src="deploy/jquery.parallax.js"></script> -->
-	<script>
-		// $(window).load(function(){
-		// 	$('.loader-section').hide();
-		// });
-		// window.onload = function(){
-		// 	$(".loader-section").hide(); 
-		// }
-		$('body').append('<div class="loader-section"><img class="loader" src="obj/plain-logo1.svg"></div>');
-		$(window).on('load', function(){
-		setTimeout(removeLoader, 800); //wait for page load PLUS two seconds.
-		});
-		function removeLoader(){
-			$( '.loader-section').fadeOut(500, function() {
-			// fadeOut complete. Remove the loading div
-			$( '.loader-section' ).remove(); //makes page more lightweight 
-		});  
-		}
-		$(function(){
-			setTimeout(function(){
-				$('.logo-container').animate({opacity:1});
-				$('.layer').animate({
-					bottom:'0px'
-					// '-webkit-transform':'translate(0,-100%)'
-				},1200,'easeOutQuad');
-			},1000)
-			setTimeout(function(){
-				$('.tagline').css({opacity:1});
-				$('.date-container').css({opacity:1});
-			},2200);
-		});
-		$(".know-more").click(function(){
-			$(".cross").removeClass('rotate')
-			// $('.tail').css({display:'inline-block'}).promise().done(function(){
-			// 	$('.tail').addClass('animated-tail');
-			// })
-			$('.arrow').animate({top:'59px'},'linear',function(){
-				setTimeout(function(){
-					$('.logo-container').animate({
-						top:'-23%',
-						opacity:0
-					},400,'easeInQuart');
+	<script src="dist/abcd/index.js"></script>
 
-					$('.date-container').animate({
-						left:'0%',
-						opacity:0
-					},400,'easeInQuart');
-
-					$('.tagline').animate({
-						left:'100%',
-						opacity:0
-					},400,'easeInQuart');
-
-					$('.layer').animate({
-						bottom:'-500px'
-						// transform:'translate(0,100%)'
-					},400,'easeInQuart',function(){
-						$('.know-block').animate({
-							top:'0'
-						},function(){
-
-						})
-					})
-				},200);
-			})
-		});
-		$(".cross").click(function(){
-			$(".cross").addClass('rotate')
-			setTimeout(function(){
-				$('.arrow').animate({top:'26px'},200,'easeInQuart')
-				$('.tail').css({display:'none'})
-				$('.logo-container').animate({
-					top:'23%',
-					opacity:1
-				},600,'easeInQuart');
-
-				$('.date-container').animate({
-					left:'50%',
-					opacity:1
-				},600,'easeInQuart');
-
-				$('.tagline').animate({
-					left:'50%',
-					opacity:1
-				},600,'easeInQuart');
-				$('.know-block').animate({
-					top:'-100%'
-				},400,'easeInQuart',function(){
-					$('.layer').animate({
-						bottom:'0'
-					},function(){
-
-					})
-				})
-			},200);
-		});
-	</script>
-
-	<!-- minifies script for background -->
+	<!-- minified script for background -->
 
 	<script>
 		$(window).resize(function(){$("#c").width($(window).width())
