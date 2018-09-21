@@ -9,7 +9,7 @@ $(window).on('load', function(){
     setTimeout(function(){
         $('.sub-containers, .icons').css({display:'block'})
 
-    },2200)
+    },1200)
     // alert('bing bong');
 setTimeout(removeLoader, 800); //wait for page load PLUS two seconds.
 });
