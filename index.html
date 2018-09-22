@@ -25,7 +25,7 @@
 	<!-- Scripts -->
 	<script src="dist/3.min.js"></script>
 	<script src="dist/three-particle-fire.js"></script>
-	<!-- <script src="dist/particlesaga.min.js"></script> -->
+	<script src="dist/particlesaga.min.js"></script>
 	<!-- <script src="dist/OrbitControls.js"></script>
 	<script src="dist/TrackballControls.js"></script> -->
 	<script src="dist/CSS3DRenderer.js"></script>
@@ -37,13 +37,14 @@
 		}
 		#saga{
 			position: absolute;
-			top:7%;
-			left:50%;
-			transform:translate(-50%,0%);
+			/* top:7%;
+			left:50%; */
+			/* transform:translate(-61%,22%); */
 			width:300px;
 			height:300px;
-			background: red;
-			overflow: hidden;
+			/* background: red; */
+			/* overflow: hidden; */
+			/* top: -10vh;margin: auto; */
 		}
 	</style>
 
@@ -57,12 +58,14 @@
 	
 	<canvas id="c"></canvas>
 	<div class="upper-half">
-		<section id="saga">
-			<ul id="multitarget-references">
-				<li id="multitarget-reference-1"></li>
-				<li id="multitarget-reference-2"></li>
-			</ul>
-		</section>
+		<div class="logo-container">
+			<section id="saga">
+				<ul id="multitarget-references">
+					<!-- <li id="multitarget-reference-1"></li>
+					<li id="multitarget-reference-2"></li> -->
+				</ul>
+			</section>
+		</div>
 		<!-- <div class="logo-section">
 			<img src="obj/logo1.svg" alt="" class="logo-container">	
 		</div> -->
@@ -80,8 +83,8 @@
 		</div>
 	</div>
 	<div class="sponsor-icons">
-		<div class="icons icon1">#1</div>
-		<div class="icons icon2">#2</div>
+		<div class="icons icon1"></div>
+		<div class="icons icon2"></div>
 		<!-- <div class="icons icon3">#3</div> -->
 	</div>
 	<div class="layer">

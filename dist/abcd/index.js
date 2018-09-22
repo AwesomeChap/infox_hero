@@ -9,7 +9,7 @@ $(window).on('load', function(){
     setTimeout(function(){
         $('.sub-containers, .icons').css({display:'block'})
 
-    },1200)
+    },500)
     // alert('bing bong');
 setTimeout(removeLoader, 800); //wait for page load PLUS two seconds.
 });
@@ -40,7 +40,7 @@ $(".know-more").click(function(){
     // $('.arrow').animate({top:'59px'},'linear',function(){
     //     setTimeout(function(){
             $('.logo-container').animate({
-                top:'-23%',
+                top:'-7%',
                 opacity:0
             },400,'easeInQuart');
 
@@ -81,7 +81,7 @@ $(".cross").click(function(){
         $('.arrow').animate({top:'26px'},200,'easeInQuart')
         $('.tail').css({display:'none'})
         $('.logo-container').animate({
-            top:'23%',
+            top:'4%',
             opacity:1
         },600,'easeInQuart');
 

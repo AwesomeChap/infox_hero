@@ -13,13 +13,13 @@ var cometContainer = document.getElementById('comet'),
 var width  = $(cometContainer).width(),
     height = $(cometContainer).height(),
     clock = new THREE.Clock(),
-    scene,
+    scene1,
     camera,
     renderer,renderer12,renderer13,renderer14,renderer15,renderer16
     loader = new THREE.JSONLoader(),
     textureLoader = new THREE.TextureLoader();
 
-scene  = new THREE.Scene();
+scene1  = new THREE.Scene();
 camera = new THREE.PerspectiveCamera( 40, width / height, 0.1, 1000 );
 camera.position.z = 25;
 camera.position.x = 10;
@@ -86,8 +86,8 @@ cometContainer5.appendChild( renderer15.domElement );
 cometContainer6.appendChild( renderer16.domElement );
 // document.body.appendChild( renderer.domElement );
 
-scene.add( new THREE.DirectionalLight( '#ccc' ) );
-scene.add( new THREE.AmbientLight( '#666666' ) );
+scene1.add( new THREE.DirectionalLight( '#ccc' ) );
+scene1.add( new THREE.AmbientLight( '#666666' ) );
 //0.25,2,150
 var geometry = new particleFire.Geometry( 3,6,13000 );
 var material = new particleFire.Material( { color: '#003fff' } );/*#003fff */
@@ -95,13 +95,13 @@ material.setPerspective( camera.fov, height );
 var particleFireMesh = new THREE.Points( geometry, material );
 particleFireMesh.position.set(  0, -.18, 0 );
 particleFireMesh.rotation.x = -1 * Math.PI;
-scene.add( particleFireMesh );
+scene1.add( particleFireMesh );
 
 // var sphereGeometry = new THREE.SphereGeometry(0.7, 1.4, 1.4);
 // var sphereMaterial = new THREE.meshBasicMaterial();
 // var earthMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
 // earthMesh.name = 'earth';
-// scene.add(earthMesh);
+// scene1.add(earthMesh);
 
 
 var boxGeometry = new THREE.BoxGeometry( 7, .6, 7 );
@@ -113,7 +113,7 @@ var boxMaterial = new THREE.MeshPhongMaterial( {
 var box = new THREE.Mesh( boxGeometry, boxMaterial );
 box.position.set( 0, 0, 0 );
 box.receiveShadow = true;
-scene.add( box );
+scene1.add( box );
 
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
@@ -273,23 +273,23 @@ function rotateCube() {
 	// update the camera
 	// cameraControl.update();
 
-	camera.lookAt( scene.position );
-    renderer.render( scene, camera );
+	camera.lookAt( scene1.position );
+    renderer.render( scene1, camera );
     renderer2.render( scene2, camera );
     
-    renderer12.render( scene, camera );
+    renderer12.render( scene1, camera );
     renderer22.render( scene22, camera );
 
-    renderer13.render( scene, camera );
+    renderer13.render( scene1, camera );
     renderer23.render( scene23, camera );
 
-    renderer14.render( scene, camera );
+    renderer14.render( scene1, camera );
     renderer24.render( scene24, camera );
 
-    renderer15.render( scene, camera );
+    renderer15.render( scene1, camera );
     renderer25.render( scene25, camera );
 
-    renderer16.render( scene, camera );
+    renderer16.render( scene1, camera );
     renderer26.render( scene26, camera );
 
 } )();
