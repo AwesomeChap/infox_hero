@@ -978,3 +978,7 @@ a{
                 transform:translate(0,-5%);
     }
 }
+.font-family-type{
+    font-family: "Julius Sans One", sans-serif !important;
+    font-weight: normal !important;
+}
