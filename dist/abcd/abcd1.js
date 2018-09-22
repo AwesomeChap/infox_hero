@@ -135,17 +135,17 @@ var string3 ='<div class="model-wrapper">'+
             '</div>';
 
 var string4 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model4" src="obj/sphere.gltf"></x-model>'+
+            '<x-model class="models" id="model4" src="obj/camera.gltf"></x-model>'+
             '<div class="model-texts" id="model-text4"></div>'+
             '</div>';
 
 var string5 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model5" src="obj/sphere.gltf"></x-model>'+
+            '<x-model class="models" id="model5" src="obj/calender.gltf"></x-model>'+
             '<div class="model-texts" id="model-text5"></div>'+
             '</div>'; 
             
 var string6 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model6" src="obj/sphere.gltf"></x-model>'+
+            '<x-model class="models" id="model6" src="obj/phone.gltf"></x-model>'+
             '<div class="model-texts" id="model-text6"></div>'+
             '</div>';
 
@@ -161,7 +161,7 @@ renderer2 = new THREE.CSS3DRenderer();
 renderer2.setSize(width, height);
 renderer2.domElement.style.position = 'absolute';
 renderer2.domElement.style.top = '0';
-// renderer2.domElement.style.left = '0';
+renderer2.domElement.style.left = '0';
 // rebderer2.domElement.style.overflow = 'hidden';
 
 renderer22 = new THREE.CSS3DRenderer();
@@ -239,7 +239,7 @@ function createCSS3DObject(s) {
 	// div.style.display = 'flex';
 	// div.style.justifyContent = 'center';
 	// div.style.alignItems = 'center';
-	div.style.background = 'none';
+	// div.style.background = 'green';
 
 	// create a CSS3Dobject and return it.
 	var object = new THREE.CSS3DObject(div);
@@ -312,7 +312,7 @@ window.addEventListener( 'resize', function () {
 
 $(document).ready(function(){
     $("#model-text").hover(function(){
-        $('#model-text').html('Sample').promise().done(function(){});
+        $('#model-text').html('About Us').promise().done(function(){});
         $("#model").css({display:'none'}).promise().done(function(){
             $('#model-text').animate(
                 {
@@ -339,7 +339,8 @@ $(document).ready(function(){
     });
     
     $("#model-text2").hover(function(){
-        $('#model-text2').html('Sample').promise().done(function(){});
+        // alert('got ya !');
+        $('#model-text2').html('Login').promise().done(function(){});
         $("#model2").css({display:'none'}).promise().done(function(){
             $('#model-text2').animate(
                 {
@@ -366,7 +367,7 @@ $(document).ready(function(){
     });
 
     $("#model-text3").hover(function(){
-        $('#model-text3').html('Sample').promise().done(function(){});
+        $('#model-text3').html('Events').promise().done(function(){});
         $("#model3").css({display:'none'}).promise().done(function(){
             $('#model-text3').animate(
                 {
@@ -393,7 +394,7 @@ $(document).ready(function(){
     });
 
     $("#model-text4").hover(function(){
-        $('#model-text4').html('Sample').promise().done(function(){});
+        $('#model-text4').html('Memories').promise().done(function(){});
         $("#model4").css({display:'none'}).promise().done(function(){
             $('#model-text4').animate(
                 {
@@ -420,7 +421,7 @@ $(document).ready(function(){
     });
 
     $("#model-text5").hover(function(){
-        $('#model-text5').html('Sample').promise().done(function(){});
+        $('#model-text5').html('Schedule').promise().done(function(){});
         $("#model5").css({display:'none'}).promise().done(function(){
             $('#model-text5').animate(
                 {
@@ -447,7 +448,7 @@ $(document).ready(function(){
     });
 
     $("#model-text6").hover(function(){
-        $('#model-text6').html('Sample').promise().done(function(){});
+        $('#model-text6').html('Contact Us').promise().done(function(){});
         $("#model6").css({display:'none'}).promise().done(function(){
             $('#model-text6').animate(
                 {
