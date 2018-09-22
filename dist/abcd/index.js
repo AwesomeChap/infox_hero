@@ -21,7 +21,7 @@ function removeLoader(){
 }
 $(function(){
     setTimeout(function(){
-        $('.logo-container').animate({opacity:1});
+        $('.logo-container').animate({opacity:1, top:'4%'});
         $('.layer').animate({
             bottom:'0px'
             // '-webkit-transform':'translate(0,-100%)'
@@ -40,7 +40,7 @@ $(".know-more").click(function(){
     // $('.arrow').animate({top:'59px'},'linear',function(){
     //     setTimeout(function(){
             $('.logo-container').animate({
-                top:'-7%',
+                top:'-17%',
                 opacity:0
             },400,'easeInQuart');
 

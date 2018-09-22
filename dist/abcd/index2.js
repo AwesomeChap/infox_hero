@@ -209,10 +209,10 @@ var PRNG = (function(exports) {
     // },
     {
       type: ParticleSaga.ImageTarget,
-      url: "../../obj/logo.png",
+      url: "./obj/logo.png",
       options: {
         respondsToMouse: true,
-        size: 2
+        size: 1
       }
     },
     //  {
@@ -236,10 +236,10 @@ var PRNG = (function(exports) {
   
     {
       type: ParticleSaga.ImageTarget,
-      url: "../../obj/plain-logo.png",
+      url: "./obj/plain-logo.png",
       options: {
         respondsToMouse: true,
-        size: 2
+        size: 1
       }
     }
     // {
