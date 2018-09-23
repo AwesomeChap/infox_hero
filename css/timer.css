@@ -1,6 +1,9 @@
 #countup {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -80,7 +83,9 @@
 	/* margin-top:-2%; */
 	width: 100%;
 	height: 100%;
-    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
 }
 
 .timer-container{
@@ -88,17 +93,28 @@
 	/* background-color: #aaa; */
 	/* margin : auto 0; */
 	height: 50%;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	/* margin: auto 0; */
 }
 
 @media only screen and (max-width : 767px){
     .timer-wrapper{
 		/* display:none; */
-        transform: scale(0.9); 
+        -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+                transform: scale(0.9); 
     }
 }
 
@@ -109,7 +125,8 @@
     }
     #countup{
 		display:none;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 	}
 	.screen{
 		width:300px;

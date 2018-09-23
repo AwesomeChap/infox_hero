@@ -3,6 +3,7 @@ body{
     background-color: #111111;
     color: white;
     width:100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -34,7 +35,7 @@ body{
     /* background-color:green; */
     position: relative;
     top:50%;
-    left:3.5%;
+    left:6.7%;
     /* transform-origin: 50% 50.1%; */
     -webkit-transform-origin: 50% 67.5%;
         -ms-transform-origin: 50% 67.5%;
@@ -407,9 +408,6 @@ body{
     }
 }
 
-.upper-half{
-    
-}
 
 .logo-section{
     /* position:absolute; */
@@ -444,6 +442,21 @@ body{
     /* flex-wrap:wrap; */
 }
 
+
+.hero-text{  
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,0%);
+    width:100%;
+    height: 15%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    /* background-color: rgba(51, 51, 51, 0.541); */
+    justify-content: space-between;
+}
+
 .sub-containers{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -451,15 +464,18 @@ body{
     opacity:1;
     padding: 1px 10px;
     /* border:2px solid red; */
-    position: absolute;
-    -webkit-transform: translate(-50%,-50%) skew(20deg,0);
-        -ms-transform: translate(-50%,-50%) skew(20deg,0);
-            transform: translate(-50%,-50%) skew(20deg,0);
+    /* position: absolute; */
+    -webkit-transform: skew(20deg,0);
+        -ms-transform: skew(20deg,0);
+            transform: skew(20deg,0);
     background-color: transparent;
     color:#ffffff;
     letter-spacing: 0.1em;
     display:-webkit-box;
     display:-ms-flexbox;
+    /* width:auto;
+    margin:0 auto; */
+    /* flex-wrap:wrap; */
     display:flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -468,7 +484,7 @@ body{
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden;
-    /* display:none; */
+    display:none;
     z-index:1;
 }
 
@@ -550,8 +566,6 @@ body{
 }
 
 .date-container{
-    top:54%;
-    left:50%;
     font-size: 28px;
 }
 
@@ -565,8 +579,7 @@ body{
 
 .ggsipu-container{
     font-size: 20px;
-    top:59.2%;
-    left:50%;
+  
     /* -webkit-animation:fadeInDown .5s ease-in-out 2.2s 1;
     animation:fadeInDown .5s ease-in-out 2.2s 1; */
 }
@@ -581,8 +594,6 @@ body{
 
 .tagline-container{
     font-size: 20px;
-    top:63.7%;
-    left:50%;
     /* animation:fadeInDown .5s ease-in-out 0.3s 1; */
 }
 
@@ -716,11 +727,12 @@ body{
     position:absolute;
     width:50%;
     /* height: 200px; */
-    top:50%;
+    bottom:15%;
+    /* top:50%; */
     left:50%;
-    -webkit-transform:translate(-50%,350%);
-        -ms-transform:translate(-50%,350%);
-            transform:translate(-50%,350%);
+    -webkit-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%);
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -797,4 +809,84 @@ body{
 .font-family-type{
     font-family: "Julius Sans One", sans-serif !important;
     font-weight: 100 !important;
+}
+
+.mob{
+    display:none;
+}
+
+@media only screen and (max-width:767px){
+    .layer{
+        background: none;
+    }
+    .sub-layer{
+        display:none;
+    }
+    #c{
+        display:none;
+    }
+    .logo-container{
+        -webkit-transform: translate(-500%,-5%);
+        -ms-transform: translate(-50%,-5%);
+            transform: translate(-50%,-5%);
+        width:400px;
+        height: 400px;
+    }
+    .hero-text{
+        transform: translate(-50%,90%);
+    }
+    /* .date-container{
+        font-size: 24px;
+        top:63%;
+    }
+    .ggsipu-container{
+        font-size: 15px;
+        top:68.2%;
+    }
+    .tagline-container{
+        width:56.5%;
+        font-size: 14px;
+        top:72.7%;
+    } */
+    .sponsor-icons{
+        width:100%;
+        justify-content: space-around;
+        bottom:5%
+    }
+}
+
+@media only screen and (max-width:479px){
+    .logo-container{
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%, 0%) scale(0.7);
+        /* width:400px;
+        height: 400px;
+        background-color: rgb(77, 8, 8); */
+    }
+    .date-container{
+        font-size: 18px;
+        /* top:63%; */
+    }
+    .ggsipu-container{
+        font-size: 14px;
+        /* top:68.2%; */
+    }
+    .tagline-container{
+        font-size: 14px;
+        /* top:72.7%; */
+    }
+    .hero-text{
+        height: 14%;
+    }
+    .icons{
+        width:60px;
+        height:35px;
+    }
+    .pc{
+        display:none;
+    }
+    .mob{
+        display:inline-block;
+    }
 }

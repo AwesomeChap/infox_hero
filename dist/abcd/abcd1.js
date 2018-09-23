@@ -125,27 +125,27 @@ var string =
             '</div>'
             ;
 var string2 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model2" src="obj/sphere.gltf"></x-model>'+
+            '<x-model class="models" id="model2" src="obj/logo.gltf"></x-model>'+
             '<div class="model-texts" id="model-text2"></div>'+
             '</div>';
 
 var string3 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model3" src="obj/calender_2.gltf"></x-model>'+
+            '<x-model class="models" id="model3" src="obj/logo.gltf"></x-model>'+
             '<div class="model-texts" id="model-text3"></div>'+
             '</div>';
 
 var string4 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model4" src="obj/camera.gltf"></x-model>'+
+            '<x-model class="models" id="model4" src="obj/logo.gltf"></x-model>'+
             '<div class="model-texts" id="model-text4"></div>'+
             '</div>';
 
 var string5 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model5" src="obj/clock/scene.gltf"></x-model>'+
+            '<x-model class="models" id="model5" src="obj/logo.gltf"></x-model>'+
             '<div class="model-texts" id="model-text5"></div>'+
             '</div>'; 
             
 var string6 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model6" src="obj/phone.gltf"></x-model>'+
+            '<x-model class="models" id="model6" src="obj/logo.gltf"></x-model>'+
             '<div class="model-texts" id="model-text6"></div>'+
             '</div>';
 

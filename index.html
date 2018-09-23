@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Humans -->
-	<link rel="author" href="humans.txt" />
+	<link rel="author" href="humans.txt"/>
 
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -20,17 +20,19 @@
 	<link rel="stylesheet" href="css/glitch-timer.css">
 	<link rel="stylesheet" href="css/modal.css">
 	<link rel="stylesheet" href="css/10_pieces.css">
+	<link rel="stylesheet" href="css/mobile-menu.css">
 	<link href="https://fonts.googleapis.com/css?family=Signika:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" type="text/css" href="assets/styles/css/hero.css"/> -->
 	<!-- <link rel="stylesheet" href="css/logo.css"> -->
 
 	<!-- Scripts -->
-	<script src="dist/3.min.js"></script>
-	<script src="dist/three-particle-fire.js"></script>
-	<script src="dist/particlesaga.min.js"></script>
+	<script src="dist/3p/3.min.js"></script>
+	<script src="dist/3p/three-particle-fire.js"></script>
+	<script src="dist/3p/particlesaga.min.js"></script>
 	<!-- <script src="dist/OrbitControls.js"></script>
 	<script src="dist/TrackballControls.js"></script> -->
-	<script src="dist/CSS3DRenderer.js"></script>
+	<script src="dist/3p/CSS3DRenderer.js"></script>
 
 	<style>
 		/* #model4{
@@ -46,11 +48,19 @@
 			/* top:7%;
 			left:50%; */
 			/* transform:translate(-61%,22%); */
-			width:300px;
-			height:300px;
+			width:100%;
+			height:100%;
 			/* background: red; */
 			/* overflow: hidden; */
 			/* top: -10vh;margin: auto; */
+		}
+		.testdiv{
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			display:inline-block;
+			background-color:red;
 		}
 	</style>
 
@@ -65,27 +75,32 @@
 	<canvas id="c"></canvas>
 	<div class="upper-half">
 		<div class="logo-container">
-			<section id="saga">
+			<div id="saga">
 				<ul id="multitarget-references">
 					<!-- <li id="multitarget-reference-1"></li>
 					<li id="multitarget-reference-2"></li> -->
 				</ul>
-			</section>
+			</div>
 		</div>
 		<!-- <div class="logo-section">
 			<img src="obj/logo1.svg" alt="" class="logo-container">	
 		</div> -->
-		<div class="date-container sub-containers">
-			<div class="slider"></div>
-			<div class="date">OCT 12th-14th 2018</div>
-		</div>
-		<div class="ggsipu-container sub-containers">
-				<div class="slider"></div>
-			<div class="ggsipu">TECHSPACE USICT | GGSIPU</div>
-		</div>
-		<div class="tagline-container sub-containers">
-				<div class="slider"></div>
-				<div class="tagline">Celebrating the sense of Belonging</div>
+		<div class="hero-text">
+			<!-- <div class="testdiv">
+				jbcxkhzbcjhdbvbsb vsbl
+			</div> -->
+			<div class="date-container sub-containers">
+					<div class="slider"></div>
+					<div class="date">OCT 12th-14th 2018</div>
+			</div>
+			<div class="ggsipu-container sub-containers">
+					<div class="slider"></div>
+				<div class="ggsipu">TECHSPACE USICT | GGSIPU</div>
+			</div>
+			<div class="tagline-container sub-containers">
+					<div class="slider"></div>
+					<div class="tagline">Celebrating the sense of Belonging</div>
+			</div>
 		</div>
 	</div>
 	<div class="sponsor-icons">
@@ -113,9 +128,18 @@
 			<div class="arrow"></div>
 		</div>
 		<div class="sponsor-layer">
-			<a href="http://206.189.141.176:3000/"><div>infoxpression 2k18</div></a>
-			<a href="http://fb.com/infoxpression"><div>fb.com/infoxpression</div></a>
-			<a href="http://techspace.club/"><div>TECHSPACE USICT | GGSIPU</div></a>
+			<a href="http://206.189.141.176:3000/">
+				<div class="pc">infoxpression 2k17</div>
+				<div class="mob"><img src="obj/infox17-logo.png" alt="" style="width: 15px;"></div>
+			</a>
+			<a href="http://fb.com/infoxpression">
+				<div class="pc">fb.com/infoxpression</div>
+				<div class="mob"><i class="fab fa-facebook-square"></i></div>
+			</a>
+			<a href="http://techspace.club/">
+				<div class="pc">TECHSPACE USICT | GGSIPU</div>
+				<div class="mob"><b>T</b></div>
+			</a>
 		</div>
 	</div>
 	
@@ -138,10 +162,12 @@
 					</div>
 				</div>
 				<div class="events-data">
-					<div class="heading">
-						<div class="heading-slider"></div>
-						<div class="heading-text">
-							EVENTS
+					<div class="heading-wrapper">
+						<div class="heading">
+							<div class="heading-slider"></div>
+							<div class="heading-text">
+								EVENTS
+							</div>
 						</div>
 					</div>
 					<p style="text-align: justify; text-justify:inter-word">
@@ -153,10 +179,12 @@
 				</div>
 			</div>
 			<div class="timer-container">
-				<div id="heading_id" class="heading">
-					<div class="heading-slider"></div>
-					<div class="heading-text">
-							FEST STARTS IN
+				<div class="heading-wrapper">
+					<div class="heading">
+						<div class="heading-slider"></div>
+						<div class="heading-text">
+								FEST STARTS IN
+						</div>
 					</div>
 				</div>
 				<div class="timer-wrapper">
@@ -171,6 +199,43 @@
 		</div>
 	</div>
 
+	<!-- hamburger-->
+
+	<div id="test2">
+		<nav class="nav-bar">
+			<div  class="open"  id="navbar">
+				<span class="cls"></span>
+				<span>
+				<ul class="sub-menu">
+					<li>
+					<a href="/">Home</a>
+					</li>
+					<li>
+					<a href="/about">About Us</a>
+					</li>
+					<li>
+					<a href="/events">Events</a>
+					</li>
+					<li>
+					<a href="/schedule">Schedule</a>
+					</li>
+					<li>
+					<a href="/sponsers">Sponsors</a>
+					</li>
+					<li>
+					<a href="/contact">Contact Us</a>
+					</li>
+					<li>
+						<a href="/signIn">Login</a>
+					</li>
+				</ul>
+				</span>
+				<span class="cls"></span>
+				<div class="nav-bar-2"></div>
+			</div>
+		</nav>
+	</div>
+
 	<!---->
 
 
@@ -179,18 +244,19 @@
 	<!-- Scripts -->
 
 	<!-- <script src="dist/custom-element-polyfill.min.js"></script> -->
-	<script src="dist/three-gltf-loader.min.js"></script>
+	<script src="dist/3p/three-gltf-loader.min.js"></script>
 	<!-- <script src="dist/three-obj-loader.min.js"></script> -->
-	<script src="dist/model-element.js"></script>
-	<script src="dist/jquery-3.3.1.min.js"></script>
-	<script src="dist/anim.min.js"></script>
+	<script src="dist/3p/model-element.js"></script>
+	<script src="dist/3p/jquery-3.3.1.min.js"></script>
+	<script src="dist/3p/anim.min.js"></script>
 	<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script> -->
-	<script src="dist/jquery.easing.min.js"></script>
+	<script src="dist/3p/jquery.easing.min.js"></script>
 	<script src="dist/abcd/abcd1.js"></script>
 	<!-- <script src="assets/scripts/js/libraries.min.js"></script> -->
 	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 	<script src="dist/abcd/index.js"></script>
 	<script src="dist/abcd/index2.js"></script>
+	<script src="dist/abcd/mobile-menu.js"></script>
 
 	<!-- minified script for background -->
 
@@ -202,7 +268,7 @@ E("DOMMouseScroll",t);E("mousewheel",t);function u(a){a.x=(m()*d-d*0.5)*p;a.y=(m
 for(var v=0,w;v<V;v++){w={};u(w);q.push(w)}
 setInterval('k.fillStyle="#000";k.fillRect(0,0,d,e);for(a=i-d/2+d/2,f=j-e/2+e/2,h=0;h<V;h++){b=q[h],x=b.x/b.a,y=b.y/b.a,z=1/b.a*5+1,A=n(Q*h+r)*64+W,B=n(Q*h+2+r)*64+W,C=n(Q*h+4+r)*64+W;if(b.b!=0){k.strokeStyle="rgb("+o(A)+","+o(B)+","+o(C)+")";k.lineWidth=z;k.beginPath();k.moveTo(x+a,y+f);k.lineTo(b.b+a,b.c+f);k.stroke()}b.b=x;b.c=y;b.a-=s;if(b.a<s||b.b>d||b.c>e)u(b)}r+=0.1;',25)
 	</script>
-	<script src="dist/progressbar.js"></script>
+	<script src="dist/3p/progressbar.js"></script>
 	<script src="dist/abcd/timer.js"></script>
 	<script src="dist/abcd/timer-glitch.js"></script>
 </body>

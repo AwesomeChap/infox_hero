@@ -8,7 +8,7 @@ $('body').append('<div class="loader-section"><img class="loader" src="obj/plain
 $(window).on('load', function(){
     
     setTimeout(function(){
-        $('.sub-containers, .icons').css({display:'block'})
+        $('.sub-containers, .icons').css({display:'inline-block'})
 
     },500)
     // alert('bing bong');
@@ -50,9 +50,8 @@ $(function(){
 });
 $(".know-more").click(function(){
     $(".cross").removeClass('rotate')
-    setTimeout(function(){
-        $('#heading_id').css({display:'block'});
-    },0);
+    $("#test2").css({display:'none'});
+    $('.heading-wrapper').css({display:'block'});
     // $('.tail').css({display:'inline-block'}).promise().done(function(){
     // 	$('.tail').addClass('animated-tail');
     // })
@@ -96,8 +95,9 @@ $(".know-more").click(function(){
 $(".cross").click(function(){
     $(".cross").addClass('rotate')
     setTimeout(function(){
-        $('.sub-containers, .icons').css({display:'block'})
-        $('#heading_id').css({display:'none'});
+        $('.sub-containers, .icons').css({display:'inline-block'})
+        $('.heading-wrapper').css({display:'none'});
+        $("#test2").css({display:'block'});
         $('.arrow').animate({top:'26px'},200,'easeInQuart')
         $('.tail').css({display:'none'})
         $('.logo-container').animate({
