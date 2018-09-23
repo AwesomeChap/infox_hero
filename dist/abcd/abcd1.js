@@ -394,7 +394,7 @@ $(document).ready(function(){
     });
 
     $("#model-text4").hover(function(){
-        $('#model-text4').html('Memories').promise().done(function(){});
+        $('#model-text4').html('Sponsers').promise().done(function(){});
         $("#model4").css({display:'none'}).promise().done(function(){
             $('#model-text4').animate(
                 {

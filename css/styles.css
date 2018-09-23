@@ -58,8 +58,8 @@ body{
 }
 
 #model3{
-    -webkit-transform: scale3d(0.038,0.038,0.038) rotate3d(0,0,0,90deg);
-            transform: scale3d(0.038,0.038,0.038) rotate3d(0,0,0,180deg);
+    -webkit-transform: scale3d(0.038,0.038,0.038) rotate3d(1,0,0,90deg);
+            transform: scale3d(0.038,0.038,0.038) rotate3d(1,0,0,90deg);
 }
 
 #model4{
@@ -68,13 +68,13 @@ body{
 }
 
 #model5{
-    -webkit-transform: scale3d(0.038,0.038,0.038) rotate3d(0,0,0,90deg);
+    -webkit-transform: scale3d(0.038,0.038,0.038) rotate3d(1,0,0,90deg);
             transform: scale3d(0.038,0.038,0.038) rotate3d(1,0,0,90deg);
 }
 
 #model6{
-    -webkit-transform: scale3d(0.038,0.038,0.038) rotate3d(1,0,0,10deg);
-            transform: scale3d(0.038,0.038,0.038) rotate3d(1,0,0,10deg);
+    -webkit-transform: scale3d(0.038,0.038,0.038) rotate3d(1,0,0,90deg);
+            transform: scale3d(0.038,0.038,0.038) rotate3d(1,0,0,90deg);
 }
 
 .model-texts{
