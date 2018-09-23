@@ -212,7 +212,7 @@ a{
         -ms-transform: skew(20deg,0);
             transform: skew(20deg,0);
     background-color: transparent;
-    color:#ffffff;
+    color:#ff0000;
     letter-spacing: 0.1em;
     display:-webkit-box;
     display:-ms-flexbox;
