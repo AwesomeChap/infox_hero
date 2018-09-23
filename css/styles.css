@@ -460,7 +460,8 @@ body{
 .sub-containers{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: 'Signika', sans-serif;
+    font-family: "Julius Sans One", sans-serif !important;
+    font-weight: 100 !important;
     opacity:1;
     padding: 1px 10px;
     /* border:2px solid red; */
@@ -566,7 +567,7 @@ body{
 }
 
 .date-container{
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .date{
@@ -578,7 +579,7 @@ body{
 }
 
 .ggsipu-container{
-    font-size: 20px;
+    font-size: 18px;
   
     /* -webkit-animation:fadeInDown .5s ease-in-out 2.2s 1;
     animation:fadeInDown .5s ease-in-out 2.2s 1; */
@@ -593,7 +594,7 @@ body{
 }
 
 .tagline-container{
-    font-size: 20px;
+    font-size: 18px;
     /* animation:fadeInDown .5s ease-in-out 0.3s 1; */
 }
 
@@ -659,7 +660,8 @@ body{
         -ms-flex-align: center;
             align-items: center;
     font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Julius Sans One", sans-serif !important;
+    font-weight: 100 !important;
     position: absolute;  
     bottom:0;
     width:100%;
@@ -833,21 +835,22 @@ body{
         height: 400px;
     }
     .hero-text{
-        transform: translate(-50%,90%);
+        top:62%;
+        /* transform: translate(-50%,90%); */
     }
-    /* .date-container{
-        font-size: 24px;
-        top:63%;
+    .date-container{
+        font-size: 22px;
+        /* top:63%; */
     }
     .ggsipu-container{
-        font-size: 15px;
-        top:68.2%;
+        font-size: 16px;
+        /* top:68.2%; */
     }
     .tagline-container{
-        width:56.5%;
-        font-size: 14px;
-        top:72.7%;
-    } */
+        /* width:56.5%; */
+        font-size: 16px;
+        /* top:72.7%; */
+    }
     .sponsor-icons{
         width:100%;
         justify-content: space-around;
@@ -858,26 +861,30 @@ body{
 @media only screen and (max-width:479px){
     .logo-container{
         -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%, 0%) scale(0.7);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, -10%) scale(0.5);
         /* width:400px;
         height: 400px;
         background-color: rgb(77, 8, 8); */
     }
     .date-container{
-        font-size: 18px;
+        font-size: 14px;
         /* top:63%; */
     }
     .ggsipu-container{
-        font-size: 14px;
+        font-size: 10px;
         /* top:68.2%; */
     }
     .tagline-container{
-        font-size: 14px;
+        font-size: 10px;
         /* top:72.7%; */
     }
     .hero-text{
-        height: 14%;
+        top:55%;
+        height: 12%;
+    }
+    .sponsor-icons{
+        bottom:10%;
     }
     .icons{
         width:60px;

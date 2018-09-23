@@ -22,7 +22,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-family: 'Signika', sans-serif;
+    font-family: "Julius Sans One", sans-serif !important;
+    font-weight: 100;
     letter-spacing: 0.05em;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -200,7 +201,8 @@ a{
 .heading{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: 'Signika', sans-serif;
+    font-family: "Julius Sans One", sans-serif !important;
+    font-weight: 1000 !important;
     opacity:1;
     padding: 1px 10px;
     /* text-decoration: underline; */
@@ -278,8 +280,16 @@ a{
     }
 
     .events-data{
-        width: 90%;
+        font-size:10px;
+        width: 100%;
         padding:5%;
+    }
+
+    .button{
+        font-size: 13px;
+        font-weight: 500 !important;
+        width:130px;
+        height: 35px;
     }
 
     .events-block{
@@ -295,6 +305,10 @@ a{
         -ms-flex-pack: center;
         justify-content: center;
     }    
+
+    .heading{
+        font-size: 20px;
+    }
 
     .screen{
         margin-top:20px;

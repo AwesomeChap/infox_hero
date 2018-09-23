@@ -1669,15 +1669,15 @@
 
 @media (max-width:479px){
     .wrapper_container {
-        width:220px;
-        height: 220px;
+        width:150px;
+        height: 150px;
     }
 
     .wrapper_container div{
         /* flex-direction: column; */
-        -webkit-transform:scale(0.3);
-            -ms-transform:scale(0.3);
-                transform:scale(0.3);
+        -webkit-transform:scale(0.2);
+            -ms-transform:scale(0.2);
+                transform:scale(0.2);
     }
 
     .pieces-data{

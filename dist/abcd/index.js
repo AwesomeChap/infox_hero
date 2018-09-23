@@ -97,7 +97,9 @@ $(".cross").click(function(){
     setTimeout(function(){
         $('.sub-containers, .icons').css({display:'inline-block'})
         $('.heading-wrapper').css({display:'none'});
-        $("#test2").css({display:'block'});
+        if($(window).width()<768){
+            $("#test2").css({display:'block'});
+        }
         $('.arrow').animate({top:'26px'},200,'easeInQuart')
         $('.tail').css({display:'none'})
         $('.logo-container').animate({
