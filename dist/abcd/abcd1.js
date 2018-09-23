@@ -120,7 +120,7 @@ scene1.add( box );
 
 var string =
             '<div class="model-wrapper">'+
-            '<x-model class="models" id="model" src="obj/sphere.gltf"></x-model>'+
+            '<x-model class="models" id="model" src="obj/logo.gltf"></x-model>'+
             '<div class="model-texts" id="model-text"></div>'+
             '</div>'
             ;
@@ -130,7 +130,7 @@ var string2 ='<div class="model-wrapper">'+
             '</div>';
 
 var string3 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model3" src="obj/sphere.gltf"></x-model>'+
+            '<x-model class="models" id="model3" src="obj/calender_2.gltf"></x-model>'+
             '<div class="model-texts" id="model-text3"></div>'+
             '</div>';
 
@@ -140,7 +140,7 @@ var string4 ='<div class="model-wrapper">'+
             '</div>';
 
 var string5 ='<div class="model-wrapper">'+
-            '<x-model class="models" id="model5" src="obj/calender.gltf"></x-model>'+
+            '<x-model class="models" id="model5" src="obj/clock/scene.gltf"></x-model>'+
             '<div class="model-texts" id="model-text5"></div>'+
             '</div>'; 
             

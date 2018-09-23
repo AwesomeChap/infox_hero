@@ -1,8 +1,8 @@
 {
-    "uri": "calender.gltf",
+    "uri": "calender_2.gltf",
     "mimeType": "model/gltf+json",
     "validatorVersion": "2.0.0-dev.2.5",
-    "validatedAt": "2018-09-22T15:01:24.643Z",
+    "validatedAt": "2018-09-22T18:34:58.840Z",
     "issues": {
         "numErrors": 0,
         "numWarnings": 0,
@@ -44,7 +44,7 @@
                 "pointer": "/buffers/0",
                 "mimeType": "application/gltf-buffer",
                 "storage": "data-uri",
-                "byteLength": 1032984
+                "byteLength": 615360
             }
         ],
         "hasAnimations": false,

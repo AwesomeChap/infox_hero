@@ -18,11 +18,23 @@ function removeLoader(){
     $( '.loader-section').fadeOut(500, function() {
     // fadeOut complete. Remove the loading div
     $( '.loader-section' ).remove(); //makes page more lightweight 
-});  
+});
 }
 $(function(){
 
     // anm.on(); //for parallax affect
+
+    if($(window).width()<480){
+        // alert('appended')
+        $('.timer-wrapper').append('<div class="screen glitch">'+
+        '<p class="glitch"></p>'+
+        '<div class="clock is-off"><span class="time" data-time=""></span></div>'+
+    '</div>')
+    }
+    else{
+        // alert('no glitch')
+        $('.screen').remove();
+    }
 
     setTimeout(function(){
         $('.logo-container').animate({opacity:1, top:'4%'});
@@ -38,6 +50,9 @@ $(function(){
 });
 $(".know-more").click(function(){
     $(".cross").removeClass('rotate')
+    setTimeout(function(){
+        $('#heading_id').css({display:'block'});
+    },0);
     // $('.tail').css({display:'inline-block'}).promise().done(function(){
     // 	$('.tail').addClass('animated-tail');
     // })
@@ -70,7 +85,7 @@ $(".know-more").click(function(){
                 // transform:'translate(0,100%)'
             },400,'easeInQuart',function(){
                 $('.know-block').animate({
-                    top:'0'
+                    top:'50%'
                 },function(){
 
                 })
@@ -82,6 +97,7 @@ $(".cross").click(function(){
     $(".cross").addClass('rotate')
     setTimeout(function(){
         $('.sub-containers, .icons').css({display:'block'})
+        $('#heading_id').css({display:'none'});
         $('.arrow').animate({top:'26px'},200,'easeInQuart')
         $('.tail').css({display:'none'})
         $('.logo-container').animate({
@@ -104,7 +120,7 @@ $(".cross").click(function(){
             opacity:1
         },600,'easeInQuart');
         $('.know-block').animate({
-            top:'-100%'
+            top:'-50%'
         },400,'easeOutQuart',function(){
             $('.layer').animate({
                 bottom:'0'
@@ -113,4 +129,21 @@ $(".cross").click(function(){
             })
         })
     },200);
+
+});
+
+$(window).resize(function(){
+    if($(window).width()<480){
+        // alert('appended')
+        if(!$('.screen').length){
+            $('.timer-wrapper').append('<div class="screen glitch">'+
+            '<p class="glitch"></p>'+
+            '<div class="clock is-off"><span class="time" data-time=""></span></div>'+
+        '</div>')
+        }
+    }
+    else{
+        // alert('no glitch')
+        $('.screen').remove();
+    }
 });
