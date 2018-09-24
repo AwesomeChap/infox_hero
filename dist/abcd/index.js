@@ -100,7 +100,7 @@ $(".cross").click(function(){
         if($(window).width()<768){
             $("#test2").css({display:'block'});
         }
-        $('.arrow').animate({top:'26px'},200,'easeInQuart')
+        $('.arrow').animate({top:'12px'},200,'easeInQuart')
         $('.tail').css({display:'none'})
         $('.logo-container').animate({
             top:'4%',

@@ -90,7 +90,7 @@ scene1.add( new THREE.DirectionalLight( '#ccc' ) );
 scene1.add( new THREE.AmbientLight( '#666666' ) );
 //0.25,2,150
 var geometry = new particleFire.Geometry( 3,6,13000 );
-var material = new particleFire.Material( { color: '#003fff' } );/*#003fff */
+var material = new particleFire.Material( { color: '#ff3030' } );/*#003fff */
 material.setPerspective( camera.fov, height );
 var particleFireMesh = new THREE.Points( geometry, material );
 particleFireMesh.position.set(  0, -.18, 0 );
